@@ -19,7 +19,7 @@ int soc_range(float soc)
   return 1;
 }
 
-int chargeRate(float chargeRate)
+int chargeRate_range(float chargeRate)
 {
   if(chargeRate > 0.8) {
     printf("Charge Rate out of range!\n");
@@ -33,7 +33,7 @@ int batteryIsOk(float temperature, float soc, float chargeRate) {
   int result = 1;
   result = temp_range(temperature);
   result = soc_range(soc);
-  result = chargeRate(chargeRate);
+  result = chargeRate_range(chargeRate);
 
   return result;
 }
