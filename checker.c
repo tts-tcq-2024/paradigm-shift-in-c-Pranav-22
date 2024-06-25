@@ -13,7 +13,7 @@ int chargeRate_range(float chargeRate)
 int soc_range(float soc,float chargeRate)
 {
     int result = 1;
-   if((soc < 20 || soc > 80) )
+   if(soc > 80)
    {
     printf("State of Charge out of range!\n");
     return 0;
@@ -27,7 +27,7 @@ int temp_range(float temperature, float soc, float chargeRate)
 {
     int result = 1;
     
-    if(temperature < 0 || temperature > 45) {
+    if(temperature > 45) {
     printf("Temperature out of range!\n");
     return 0;
   } 
