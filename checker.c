@@ -10,37 +10,35 @@ int chargeRate_range(float chargeRate)
      return 1;
 }
 
-int soc_range(float soc,float chargeRate)
+int soc_range(float soc)
 {
-    int result = 1;
+    int result = 0;
    if(soc > 80)
    {
     printf("State of Charge out of range!\n");
     return 0;
-  }
-   result = chargeRate_range(chargeRate);
+   }
 
-    return result;
+    return 1;
 }
 
-int temp_range(float temperature, float soc, float chargeRate)
+int temp_range(float temperature)
 {
-    int result = 1;
+    int result = 0;
     
     if(temperature > 45) {
     printf("Temperature out of range!\n");
     return 0;
   } 
-    result = soc_range(soc,chargeRate);
 
-    return result;
+    return 1;
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
 
   int result = 1;
    
-  result = temp_range(temperature,soc,chargeRate);
+ return temp_range(temperature) && soc_range(soc) && chargeRate_range(chargeRate);
 
   return result;
 }
