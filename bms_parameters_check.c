@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <assert.h>
 #include "bms_parameters_check.h"
 
 float calculate_tolerance(float range,float tolerance)
