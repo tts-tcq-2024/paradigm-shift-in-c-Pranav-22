@@ -1,8 +1,10 @@
+#include "common_util.h"
+#include "message_log.h"
 #include "battery_temperature_checker.h"
 #include "battery_soc_checker.h"
 #include "battery_charge_rate_checker.h"
-#include "message_log.h"
-#include "common_util.h"
+
+
 
 int batteryIsOk(float temperature, float soc, float chargeRate)
 {
