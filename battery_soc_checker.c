@@ -3,10 +3,7 @@
 
 battery_status battery_soc_check(float value,float min_range,float max_range)
 {
-    float min_tol;
-    float max_tol;
-    battery_status result1;
-    battery_status result2;
+
     float range_arr[4] = {0};
     int tolerance = 5;
 
