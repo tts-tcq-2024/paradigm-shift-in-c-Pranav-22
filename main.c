@@ -1,4 +1,4 @@
-#include "bms_parameters_check.h"
+#include "battery_parameters_check.h"
 #include <assert.h>
 
 int main()
