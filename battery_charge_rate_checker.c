@@ -25,8 +25,6 @@ battery_status battery_charge_rate(float value,float range)
 {
     float minimum_tolerance;
     int tolerance = 5;
-    battery_status result1 = normal;
-    battery_status result2 = normal;
 
     minimum_tolerance = range - calculate_tolerance(range,tolerance);
 
