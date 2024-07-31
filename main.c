@@ -1,11 +1,6 @@
-#include "battery_parameters_check.h"
-#include <assert.h>
+#include "battery_parameters_unit_test.h"
 
 int main()
 {
-  assert(batteryIsOk(25, 70, 0.7));
-  assert(!batteryIsOk(50, 85, 0));
-  assert(!batteryIsOk(100,20,1));
-  assert(!batteryIsOk(0,15,0.9));
-  
+    battery_parameters_testing();
 }
