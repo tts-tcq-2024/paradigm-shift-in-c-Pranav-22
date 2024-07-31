@@ -1,5 +1,7 @@
 #include "battery_parameters_unit_test.h"
 #include "battery_parameters_check.h"
+#include "common_util.h"
+#include <assert.h>
 
 void battery_parameters_testing(void)
 {
