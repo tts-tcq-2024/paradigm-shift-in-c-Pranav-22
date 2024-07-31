@@ -1,5 +1,6 @@
-#include "message_log.h"
 #include "common_util.h"
+#include "message_log.h"
+
 
 void message_logger(char *str,float value, battery_status state)
 {
